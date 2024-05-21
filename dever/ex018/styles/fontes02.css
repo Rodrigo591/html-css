@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'loves';
+    src: url('../fonts/LoveSong.ttf') format('truetype'), url('../fonts/Lovesong.otf') format('opentype');  
+    /* é Recomendado colocar mais de um tipo por causa que alguns sites n aceitam determinados tipos de formato*/
+    /* 
+        Tipos de formato
+        - opentype (otf)
+        - truetype (ttf)
+        - embed-opentype
+        - trutype-aat (Apple Advanced Typhography)
+        - svg
+    */
+    font-weight: normal;
+    font-size: normal;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+main{
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    width: 900px;
+    border-radius: 10px;
+    font-family: 'loves', Arial, Helvetica, sans-serif;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}

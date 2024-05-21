@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+
+
+ /* ESSE CODIGO N DEVE ESTAR FUNCIONANDO POR CONTA Q PRECISAVA IMPORTAR UM LINK (Entre na pasta ex 018)*/
+body{
+   font-family: 'Verdana';
+   /* Medidas absolutas
+    cm, mm, in, px, pt, pc
+
+    Medidas Relativas
+    em, ex, rem, vw, vh, %
+
+    Recomendado
+    px, em
+
+    16 pixels geralmente é = a 1 em
+   */
+   
+   
+   /* essas configurações só funcionam em determinadas familias de fonte*/
+   font-weight: lighter;
+   /*lighter, normal. bold, bolder */
+   font-style: italic;
+   text-decoration: underline;
+   /* FIM */
+}  
+h1{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 2m;
+    font-style: italic;
+    /* shorhand font
+    = font-style -> font=weight -> fonte-size -> font-family (exemplo abaixo de como fazer)*/
+    font: italic  bolder 3m 'Work Sans', sans-serif;
+    /* as duas formas de modificar a fonte estáo certas, a de 4 linhas e a de apenas 1, a diferença é q a shorhand é mais recomendado por ocupar menos espaço */
+}
+h2{
+    font: bold, 3m, 'Work Sans', sans-serif;
+    /* vc tambem pode fazer o shorhand com estilos faltando, tudo oq vai acontecer é oq estiver faltando n ser adicionado,
+    como nesse exemplo q a forma italica não foi adicionada */
+}

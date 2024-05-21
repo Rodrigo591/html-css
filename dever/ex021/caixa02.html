@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags de agrupamento</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+
+        }
+
+        nav{
+            background-color: gray;
+        }
+
+        nav > a{
+            color: rgb(245, 245, 245);
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 90px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: burlywood;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article{
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        
+        article > aside{
+            background-color: rgba(155, 194, 245, 0.932);
+        }
+        
+        footer{
+            background-color: black;
+            color: white;
+            padding: 5px;
+            text-align: center;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assunto">
+            <p>esportes</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit placeat nostrum doloremque perspiciatis veritatis dicta autem soluta deserunt molestiae. Sapiente, accusamus! Quasi fugit sequi suscipit perferendis vero quae quas vel.</p>
+                <aside>
+                    <p>artigoe escrito por mim</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo cursoemvideo</p>
+    </footer>
+</body>
+</html>
