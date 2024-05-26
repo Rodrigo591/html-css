@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.direita{
+            text-align: right;
+        }
+        
+        thead, tfoot{
+            background-color: lightgray;
+            color: black;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1;
+            background-color: rgba(82, 78, 78, 0.582);
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: aliceblue;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: gold;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas grandes</h1>
+    <!--
+        Anatomia Para tabelas Grandes
+        Table
+            Caption
+            Thead
+                tr, td, th (posso ter)
+            tbody
+                tr, td, th (posso ter)
+            tfoot
+                tr, td, th (posso ter)
+    -->
+    <table>
+        <caption> Population das unitations federatetion </caption>
+       
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">Populaçao</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="direita">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="direita">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="direita">17 264 943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="direita">0000</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ratione reiciendis, ut eligendi at provident maxime corporis nam fugit. Ipsa, debitis ut architecto ullam aliquid vitae saepe quos natus laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni officia blanditiis pariatur, suscipit placeat minima similique praesentium id eius nesciunt odit consequuntur architecto accusamus harum, nostrum voluptate labore! Ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatem similique natus praesentium est nobis eaque quod. Ex provident id excepturi neque magnam. Eligendi praesentium sint at. Exercitationem, explicabo saepe. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit dolore facilis ratione porro odio quod magnam dolores nemo maxime quam enim delectus, repellendus eum eos, dolorem modi veritatis qui animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, debitis sunt. Doloremque esse optio voluptatem delectus aut vero pariatur quas, reiciendis velit numquam dolorem sapiente. Veniam hic minima molestiae illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste vitae delectus culpa aspernatur, dolor maiores provident inventore! Soluta, sequi fugit. Nulla quae deleniti voluptate dolores suscipit ipsam, optio maxime.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ratione reiciendis, ut eligendi at provident maxime corporis nam fugit. Ipsa, debitis ut architecto ullam aliquid vitae saepe quos natus laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni officia blanditiis pariatur, suscipit placeat minima similique praesentium id eius nesciunt odit consequuntur architecto accusamus harum, nostrum voluptate labore! Ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatem similique natus praesentium est nobis eaque quod. Ex provident id excepturi neque magnam. Eligendi praesentium sint at. Exercitationem, explicabo saepe. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit dolore facilis ratione porro odio quod magnam dolores nemo maxime quam enim delectus, repellendus eum eos, dolorem modi veritatis qui animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, debitis sunt. Doloremque esse optio voluptatem delectus aut vero pariatur quas, reiciendis velit numquam dolorem sapiente. Veniam hic minima molestiae illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste vitae delectus culpa aspernatur, dolor maiores provident inventore! Soluta, sequi fugit. Nulla quae deleniti voluptate dolores suscipit ipsam, optio maxime.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ratione reiciendis, ut eligendi at provident maxime corporis nam fugit. Ipsa, debitis ut architecto ullam aliquid vitae saepe quos natus laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni officia blanditiis pariatur, suscipit placeat minima similique praesentium id eius nesciunt odit consequuntur architecto accusamus harum, nostrum voluptate labore! Ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatem similique natus praesentium est nobis eaque quod. Ex provident id excepturi neque magnam. Eligendi praesentium sint at. Exercitationem, explicabo saepe. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit dolore facilis ratione porro odio quod magnam dolores nemo maxime quam enim delectus, repellendus eum eos, dolorem modi veritatis qui animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, debitis sunt. Doloremque esse optio voluptatem delectus aut vero pariatur quas, reiciendis velit numquam dolorem sapiente. Veniam hic minima molestiae illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste vitae delectus culpa aspernatur, dolor maiores provident inventore! Soluta, sequi fugit. Nulla quae deleniti voluptate dolores suscipit ipsam, optio maxime.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ratione reiciendis, ut eligendi at provident maxime corporis nam fugit. Ipsa, debitis ut architecto ullam aliquid vitae saepe quos natus laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni officia blanditiis pariatur, suscipit placeat minima similique praesentium id eius nesciunt odit consequuntur architecto accusamus harum, nostrum voluptate labore! Ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatem similique natus praesentium est nobis eaque quod. Ex provident id excepturi neque magnam. Eligendi praesentium sint at. Exercitationem, explicabo saepe. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit dolore facilis ratione porro odio quod magnam dolores nemo maxime quam enim delectus, repellendus eum eos, dolorem modi veritatis qui animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, debitis sunt. Doloremque esse optio voluptatem delectus aut vero pariatur quas, reiciendis velit numquam dolorem sapiente. Veniam hic minima molestiae illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste vitae delectus culpa aspernatur, dolor maiores provident inventore! Soluta, sequi fugit. Nulla quae deleniti voluptate dolores suscipit ipsam, optio maxime.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ratione reiciendis, ut eligendi at provident maxime corporis nam fugit. Ipsa, debitis ut architecto ullam aliquid vitae saepe quos natus laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni officia blanditiis pariatur, suscipit placeat minima similique praesentium id eius nesciunt odit consequuntur architecto accusamus harum, nostrum voluptate labore! Ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatem similique natus praesentium est nobis eaque quod. Ex provident id excepturi neque magnam. Eligendi praesentium sint at. Exercitationem, explicabo saepe. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit dolore facilis ratione porro odio quod magnam dolores nemo maxime quam enim delectus, repellendus eum eos, dolorem modi veritatis qui animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, debitis sunt. Doloremque esse optio voluptatem delectus aut vero pariatur quas, reiciendis velit numquam dolorem sapiente. Veniam hic minima molestiae illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste vitae delectus culpa aspernatur, dolor maiores provident inventore! Soluta, sequi fugit. Nulla quae deleniti voluptate dolores suscipit ipsam, optio maxime.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ratione reiciendis, ut eligendi at provident maxime corporis nam fugit. Ipsa, debitis ut architecto ullam aliquid vitae saepe quos natus laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni officia blanditiis pariatur, suscipit placeat minima similique praesentium id eius nesciunt odit consequuntur architecto accusamus harum, nostrum voluptate labore! Ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatem similique natus praesentium est nobis eaque quod. Ex provident id excepturi neque magnam. Eligendi praesentium sint at. Exercitationem, explicabo saepe. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit dolore facilis ratione porro odio quod magnam dolores nemo maxime quam enim delectus, repellendus eum eos, dolorem modi veritatis qui animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, debitis sunt. Doloremque esse optio voluptatem delectus aut vero pariatur quas, reiciendis velit numquam dolorem sapiente. Veniam hic minima molestiae illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste vitae delectus culpa aspernatur, dolor maiores provident inventore! Soluta, sequi fugit. Nulla quae deleniti voluptate dolores suscipit ipsam, optio maxime.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ratione reiciendis, ut eligendi at provident maxime corporis nam fugit. Ipsa, debitis ut architecto ullam aliquid vitae saepe quos natus laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni officia blanditiis pariatur, suscipit placeat minima similique praesentium id eius nesciunt odit consequuntur architecto accusamus harum, nostrum voluptate labore! Ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatem similique natus praesentium est nobis eaque quod. Ex provident id excepturi neque magnam. Eligendi praesentium sint at. Exercitationem, explicabo saepe. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit dolore facilis ratione porro odio quod magnam dolores nemo maxime quam enim delectus, repellendus eum eos, dolorem modi veritatis qui animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, debitis sunt. Doloremque esse optio voluptatem delectus aut vero pariatur quas, reiciendis velit numquam dolorem sapiente. Veniam hic minima molestiae illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste vitae delectus culpa aspernatur, dolor maiores provident inventore! Soluta, sequi fugit. Nulla quae deleniti voluptate dolores suscipit ipsam, optio maxime.</p>
+    
+    
+</body>
+</html>
